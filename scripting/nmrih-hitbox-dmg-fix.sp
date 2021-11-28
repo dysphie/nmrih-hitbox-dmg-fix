@@ -23,9 +23,9 @@ public void OnPluginStart()
 
 	GameData gamedata = new GameData("hitboxfix.games");
 
-	offs_hitbox = gamedata.GetOffset("CTakeDamageInfo::hitbox");
+	offs_hitbox = gamedata.GetOffset("CGameTrace::hitbox");
 	if (offs_hitbox == -1)
-		SetFailState("Failed to get offset CTakeDamageInfo::hitbox");
+		SetFailState("Failed to get offset CGameTrace::hitbox");
 
 	DynamicDetour detour = DynamicDetour.FromConf(gamedata, "CNMRiH_BaseZombie::TraceAttack");
 	if (!detour)

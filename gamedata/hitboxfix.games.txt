@@ -14,7 +14,7 @@
 
 		"Offsets"
 		{
-			"CTakeDamageInfo::hitbox"
+			"CGameTrace::hitbox"
 			{
 				"windows"	"80"
 				"linux"	"80"
