@@ -1,0 +1,62 @@
+"Games"
+{
+	"nmrih"
+	{
+		"Signatures"
+		{
+			"CNMRiH_BaseZombie::TraceAttack"
+			{
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x83\xEC\x64\x53\x56\x57\xFF\x75\x08\x8B\xF9\x8D\x4D"
+				"linux"		"@_ZN17CNMRiH_BaseZombie11TraceAttackERK15CTakeDamageInfoRK6VectorP10CGameTraceP15CDmgAccumulator"
+			}
+		}
+
+		"Offsets"
+		{
+			"CTakeDamageInfo::hitbox"
+			{
+				"windows"	"80"
+				"linux"	"80"
+			}
+		}
+
+		"Functions"
+		{
+			// void __thiscall CNMRiH_BaseZombie::TraceAttack(
+			// CNMRiH_BaseZombie *this,
+			// const CTakeDamageInfo *info,
+			// const Vector *vecDir,
+			// CGameTrace *ptr,
+			// CDmgAccumulator *pAccumulator)
+
+			// Found by searching for function with strings "308" "556" and "762mm", in that order	
+			"CNMRiH_BaseZombie::TraceAttack"
+			{
+				"signature"  "CNMRiH_BaseZombie::TraceAttack"
+				"callconv"  "thiscall"
+				"return"  "void"
+				"this"  "ignore"
+				"arguments"
+				{
+					"info"
+					{
+						"type"  "objectptr"
+					}
+					"vecDir"
+					{
+						"type"	"vectorptr"
+					}
+					"ptr"
+					{
+						"type"  "objectptr"
+					}
+					"pAccumulator"
+					{
+						"type"  "objectptr"
+					}
+				}
+			}
+		}
+	}
+}
