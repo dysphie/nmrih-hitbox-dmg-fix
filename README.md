@@ -1,3 +1,5 @@
+> ❗ Deprecated, added to the base game
+
 # [NMRiH] Hitbox Damage Fix
 
 Fixes [this issue](https://github.com/nmrih/source-game/issues/1257)
